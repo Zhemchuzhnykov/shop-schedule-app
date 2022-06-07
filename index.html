@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astound</title>
+    <style>
+      .control-panel {
+        display: flex;
+      }
+
+      .opens-in {
+        margin: 10px;
+      }
+
+      .daily-schedule {
+        margin: 10px;
+      }
+
+      .daily-schedule__days {
+        display: flex;
+        width: 500px;
+        justify-content: space-around;
+        margin: 10px;
+      }
+
+      .promotion {
+        margin-left: 20px;
+        color: darkblue;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="control-panel">
+      <div class="opens-in">
+        <button class="opens-in-btn">Opens in</button>
+        <span class="opens-in-message"></span>
+      </div>
+      <div class="daily-schedule">
+        <button class="daily-schedule-btn">Daily Schedule</button>
+        <div class="daily-schedule__days"></div>
+      </div>
+    </div>
+    <div class="promotion">
+      <h4>Check out the promo for this day</h4>
+      <span class="promotion-name"></span>
+    </div>
+    <script src="./src/index.js" type="module"></script>
+  </body>
+</html>
